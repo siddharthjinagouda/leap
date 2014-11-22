@@ -44,5 +44,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
+group :production do
+  gem 'mysql2'
+end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
