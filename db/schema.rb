@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141203081501) do
+ActiveRecord::Schema.define(version: 20141203142035) do
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -26,6 +26,11 @@ ActiveRecord::Schema.define(version: 20141203081501) do
   end
 
   add_index "categories", ["category_id"], name: "index_categories_on_category_id"
+
+  create_table "categories_products", id: false, force: true do |t|
+    t.integer "product_id",  null: false
+    t.integer "category_id", null: false
+  end
 
   create_table "line_items", force: true do |t|
     t.integer  "product_id"
