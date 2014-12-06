@@ -13,7 +13,7 @@
  *= require_self
  *require_tree .
  */
-@import "store", "scaffolds", "carts";
+@import "products", "scaffolds";
 
 /* START_HIGHLIGHT */
 #banner {
