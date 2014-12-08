@@ -75,19 +75,28 @@
 
 /* END_HIGHLIGHT */
 	
-    ul {
-      padding: 0;
-      li {
-        list-style: none;
-        a {
-          color: #bfb;
-          font-size: small;
-        }
-      }
-    }
+   
   }
 }
 /* END_HIGHLIGHT */
+
+#menus{
+  background: #141;
+     ul {
+        padding: 0;
+        li {
+          display: inline;
+          border-right: solid 1px #fff;
+          list-style: none;
+          a {
+            padding: 2em;
+            text-decoration: none;
+            color: #bfb;
+            font-size: small;
+          }
+        }
+      }
+}
 
 .depot_form {
   fieldset {
