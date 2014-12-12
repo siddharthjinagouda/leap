@@ -39,6 +39,7 @@
 }
 
 #main {
+    clear: left;
     padding: 1em;
     background: white;
   }
@@ -86,22 +87,54 @@
 /* END_HIGHLIGHT */
 
 #menus{
-  background: #141;
-     ul {
-        padding: 0;
-        li {
-          display: inline;
-          border-right: solid 1px #fff;
-          list-style: none;
-          a {
-            padding: 2em;
-            text-decoration: none;
-            color: #bfb;
-            font-size: small;
-          }
-        }
+    background: #141;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      list-style: none;
+      a {
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+        color: #bfb;
+        font-size: small;
+       
       }
+      a:hover {
+        background-color: #282;
+      }
+    }
+    li:hover ul{
+      display:block;
+    } 
+  }
 }
+
+.submenu {
+  display: none;
+  position: absolute;
+  background: #141;
+   li {
+      display: list-item;
+      list-style: none;
+      a {
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+        color: #bfb;
+        font-size: small;
+      }
+      a:hover {
+        background-color: #282;
+    }
+  }
+}
+
 
 .depot_form {
   fieldset {
