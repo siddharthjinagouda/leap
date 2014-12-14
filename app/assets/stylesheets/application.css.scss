@@ -44,6 +44,36 @@
     background: white;
   }
 
+  #cart {
+
+    
+    padding: 1em 2em;
+    left: 0;
+    right:0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: #141;
+    font-size: smaller;
+    color:     white;
+     z-index: 10;
+     position: fixed;
+    form, div {
+      display: inline;
+    }  
+ 
+    input {
+      font-size: small;
+    }
+
+    table {
+      border-top:    1px dotted #595;
+      border-bottom: 1px dotted #595;
+      margin-bottom: 10px;
+    }
+    }
+
 #columns {
   background: #141;
 
