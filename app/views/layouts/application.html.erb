@@ -15,26 +15,27 @@
 <!-- START_HIGHLIGHT -->
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Simleap" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || "PragmaticBookshelf" %><!-- <label id="code.depot.e.title"/> -->
   </div>
   <div id="menus">
      <ul>
         <li>
-          <a href="http://www....">Men</a>
+          <a href="http://www....">Home</a>
           <ul class = "submenu">
-            <li><a href="Programmation.html">TShirts&Polos</a></li>
-            <li><a href="Reseautique.html">Shirts</a></li>
+            <li><a href="Programmation.html">PROGRAMMATION</a></li>
+            <li><a href="Reseautique.html">RÉSEAUTIQUE</a></li>
           </ul>
         </li>
-        <li><a href="http://www..../faq">Women</a></li>
-        <li><a href="http://www..../news">Food and Beverages</a></li>
+        <li><a href="http://www..../faq">Questions</a></li>
+        <li><a href="http://www..../news">News</a></li>
+        <li><a href="http://www..../contact">Contact</a></li>
       </ul>
   </div>
  
   <%= hidden_div(id: 'cart') do %>
       <% end %>            
    
-  <div id="main">
+<div id="main">
 <!-- END_HIGHLIGHT -->
       <%= yield %><!-- <label id="code.depot.e.include"/> -->
 <!-- START_HIGHLIGHT -->
