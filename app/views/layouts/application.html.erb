@@ -31,13 +31,10 @@
         <li><a href="http://www..../contact">Contact</a></li>
       </ul>
   </div>
-      <% if @cart%>
-            <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
-              <%= render @cart %>
-            <% end %>        
-      <% end %>
-
-      
+  
+  <%= hidden_div(id: 'cart') do %>
+      <% end %>            
+   
   <div id="main">
 <!-- END_HIGHLIGHT -->
       <%= yield %><!-- <label id="code.depot.e.include"/> -->
