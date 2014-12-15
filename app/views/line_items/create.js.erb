@@ -1,10 +1,16 @@
 $('#notice').hide();
 
-if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
+$('#cart').show('blind', 250); 
 
 $('#cart').html("<%= escape_javascript render(@cart) %>");
+
+
 //#START_HIGHLIGHT
 
 $('#current_item').css({'background-color':'#88ff88'}).
   animate({'background-color':'#114411'}, 1000);
-//#END_HIGHLIGHT
+
+$( "input[value*='Continue Shopping']" ).on("click", function(){
+    $('#cart').hide();
+});
+

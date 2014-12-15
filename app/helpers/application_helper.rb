@@ -13,4 +13,9 @@ module ApplicationHelper
     end
     content_tag("div", attributes, &block)
   end
+
+  def hidden_div(attributes = {}, &block)
+    attributes["style"] = "display: none"
+    content_tag("div", attributes, &block)
+  end
 end
