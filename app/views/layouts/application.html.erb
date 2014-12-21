@@ -16,8 +16,11 @@
   <div id="banner">
     <%= image_tag("logo.png") %>
     <%= @page_title || "PragmaticBookshelf" %><!-- <label id="code.depot.e.title"/> -->
-    <%= image_tag("cart.png", size:'48x48', :class => "cartimg") %>
+    <%= image_tag("cart.png", size:'48x48', :class => "cart_img") %>
     <div id="cart_item_count">
+      <% if @cart.total_quantity > 0 %>
+        <%= @cart.total_quantity %>
+      <% end %>
     </div>
 
   </div>

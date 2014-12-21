@@ -16,3 +16,12 @@ $( "input[value*='Continue Shopping']" ).on("click", function(){
 
 $('#cart_item_count').html("<%= @cart.total_quantity %>");
 
+$('.cart_img').on("click", function(){
+    $('#cart').show('blind', 250); 
+
+	$('#cart').html("<%= escape_javascript render(@cart) %>");
+
+	$( "input[value*='Continue Shopping']" ).on("click", function(){
+    $('#cart').hide();
+});
+});
