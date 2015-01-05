@@ -9,6 +9,8 @@ Depot::Application.routes.draw do
   end
   get "sessions/create"
   get "sessions/destroy"
+
+  get "carts/show"
   resources :users
 
   resources :orders

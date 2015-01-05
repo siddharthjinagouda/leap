@@ -1,0 +1,11 @@
+$('#notice').hide();
+
+$('#cart').show('blind', 250); 
+
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+
+
+//#START_HIGHLIGHT
+$( "input[value*='Continue Shopping']" ).on("click", function(){
+    $('#cart').hide();
+});
