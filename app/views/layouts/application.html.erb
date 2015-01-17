@@ -9,6 +9,7 @@
     "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %><!-- <label id="code.jlt"/> -->
   <%= csrf_meta_tags %><!-- <label id="code.csrf"/> -->
+  <style><%= yield :stylesheets %></style>
 </head>
 <!-- END:head -->
 <body class="<%= controller.controller_name %>">
@@ -43,6 +44,14 @@
   <%= hidden_div(id: 'cart') do %>
       <% end %>            
    
+  <div id="columns">
+    <div id="side">
+      <div id="ccart">
+        <%= content_for?(:ccart) ? yield(:ccart) : yield %>
+      </div>
+   </div>
+  </div>
+
 <div id="main">
 <!-- END_HIGHLIGHT -->
       <%= yield %><!-- <label id="code.depot.e.include"/> -->

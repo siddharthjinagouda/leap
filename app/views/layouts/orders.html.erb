@@ -1,0 +1,9 @@
+<% content_for :stylesheets do %>
+  #banner .cart_img {display: none}
+  #banner #cart_item_count {display: none}
+  #columns {display: block}
+<% end %>
+<% content_for :ccart do %>
+    <%= render @cart %>
+<% end %>
+<%= render template: "layouts/application" %>
