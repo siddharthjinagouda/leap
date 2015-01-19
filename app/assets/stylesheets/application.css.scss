@@ -117,17 +117,15 @@
 
 #columns {
   background: #141;
-  float: left;
-  display:none;
-
-  #main {
+   
+  #cmain {
     margin-left: 17em;
     padding: 1em;
     background: white;
   }
 
   #side {
-    
+    float: left;  
     padding: 1em 2em;
     width: 13em;
     background: #141;

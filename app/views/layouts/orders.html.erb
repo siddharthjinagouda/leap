@@ -1,9 +1,22 @@
 <% content_for :stylesheets do %>
   #banner .cart_img {display: none}
+  #main {display: none}
   #banner #cart_item_count {display: none}
   #columns {display: block}
 <% end %>
-<% content_for :ccart do %>
-    <%= render @cart %>
+<% content_for :content do %>
+  <div id="columns">
+    <div id="side">
+      <div id="ccart">
+        <%= render @cart %>
+      </div>
+   </div>
+    <div id="cmain">
+      <%= yield %><!-- <label id="code.depot.e.include"/> -->
+    </div>
+  </div>
+    
 <% end %>
 <%= render template: "layouts/application" %>
+
+
