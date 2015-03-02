@@ -9,7 +9,7 @@ class StoreController < ApplicationController
       respond_to do |format|
           format.atom
           format.html
-          format.json {render json: @products}
+          format.json
       end
   end
 end

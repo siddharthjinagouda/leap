@@ -38,4 +38,6 @@ Depot::Application.configure do
   enable_starttls_auto: true
   }
 
+  Paperclip.options[:command_path] = "C:/Program Files (x86)/ImageMagick-6.9.0-Q16"
+
 end

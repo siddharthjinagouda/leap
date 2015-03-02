@@ -2,7 +2,10 @@ class Product < ActiveRecord::Base
 	has_many :line_items
 	has_many :orders, through: :line_items
 	has_and_belongs_to_many :categories
+	has_many :product_assets
 
+  accepts_nested_attributes_for :product_assets, :allow_destroy => true, :reject_if => lambda { |a| a[:photo].blank? }
+  
 	before_destroy :ensure_not_referenced_by_any_line_item
 
 	#..

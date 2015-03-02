@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  layout "application_back_end"
   skip_before_action :authorize
   def new
   end
