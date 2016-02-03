@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -45,7 +45,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'capistrano', group: :development
 
 group :production do
-  gem 'mysql2'
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
