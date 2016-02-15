@@ -61,3 +61,4 @@ gem 'activemerchant', '~> 1.31'
 gem 'haml', '~> 4.0'
 gem 'kaminari', '~> 0.14'
 gem "paperclip", "3.4.2"
+gem 'aws-sdk'
