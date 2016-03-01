@@ -167,7 +167,7 @@ PLATFORMS
 
 DEPENDENCIES
   activemerchant (~> 1.31)
-  aws-sdk
+  aws-sdk (< 2.0)
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 4.0.0)
   haml (~> 4.0)
